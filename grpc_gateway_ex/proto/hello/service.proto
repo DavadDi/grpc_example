@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package hello;
+
+import "google/api/annotations.proto";
+
+message HelloReq {
+  string name = 1;
+}
+
+message HelloResp {
+    string msg = 1;
+}
+
+service HelloSrv {
+    rpc Echo(HelloReq) returns (HelloResp) {
+        option (google.api.http) = {
+            post: "/v1/hello/echo"
+            body: "*"
+        };
+    }
+}
