@@ -29,7 +29,9 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 
 
 ## Run
-
+```
+# glide i
+```
 
 ```
 # cd proto && ./gen.sh
