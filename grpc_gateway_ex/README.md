@@ -7,7 +7,7 @@
 
 PB 3.0
 
-
+not needed
 ```
 mkdir tmp
 cd tmp
@@ -22,6 +22,9 @@ sudo make install
 
 
 ```
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+go get -u google.golang.org/grpc
+
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
 go get -u github.com/golang/protobuf/protoc-gen-go
